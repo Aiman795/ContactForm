@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <div class="navbar">
+        <a href="index.html" id="logo"><img src="logo.png" alt="Logo" /></a>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="women.html">Women</a>
+            <a href="men.html">Men</a>
+            <a href="kids.html">Kids</a>
+            <a href="signup.html">Signup</a>
+            <a href="login.html">Login</a>
+            <a href="contact.html" class="active">Contact Us</a>
+            <a href="cart.html">Cart</a>
+        </div>
+    </div>
+
+    <h2 id="contact">Contact Us</h2>
+    <form id="contactForm" class="form">
+        <input id="name" type="text" placeholder="Full Name" required>
+        <div class="error-msg" id="name-error"></div>
+
+        <input id="email" type="email" placeholder="Email Address" required>
+        <div class="error-msg" id="email-error"></div>
+
+        <input id="subject" type="text" placeholder="Subject" required>
+        <div class="error-msg" id="subject-error"></div>
+
+        <textarea id="message" placeholder="Your Message" rows="5" required></textarea>
+        <div class="error-msg" id="message-error"></div>
+
+        <button type="submit">Send Message</button>
+    </form>
+
+    <script src="contact.js"></script>
+</body>
+</html>
